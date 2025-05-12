@@ -11,10 +11,54 @@
       margin: 0;
     }
 
-    h1 {
-      color: #394931; /* Kombu Green */
-      font-size: 2.8rem;
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: #394931;
+      margin-bottom: 0;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #394931;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-top: 5px;
+    }
+
+    .tools-heading {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #394931;
       margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .skills-strip {
+      background-color: transparent;
+      border-top: 1px solid #394931;
+      border-bottom: 1px solid #394931;
+      padding: 30px 0;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .skills-strip span {
+      font-family: 'Georgia', serif;
+      color: #394931;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
     }
 
     h2 {
@@ -27,10 +71,10 @@
     }
 
     .project {
-      background: #AFB59D; /* Softened green */
+      background: #AFB59D;
       padding: 20px;
       margin-bottom: 30px;
-      border-left: 8px solid #394931; /* Kombu Green */
+      border-left: 8px solid #394931;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
@@ -54,34 +98,16 @@
     .project a:hover {
       text-decoration: underline;
     }
-
-    .skills-strip {
-      background-color: transparent;
-      border-top: 1px solid #394931;
-      border-bottom: 1px solid #394931;
-      padding: 30px 0;
-      margin: 40px 0 60px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    .skills-strip span {
-      font-family: 'Georgia', serif;
-      color: #394931;
-      font-size: 1rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
   </style>
 </head>
 <body>
 
-  <h1>Haley Karolevitz | Portfolio</h1>
+  <div class="header">
+    <h1>Haley Karolevitz</h1>
+    <p>Portfolio</p>
+  </div>
 
-  <!-- 🛠️ Tools Section -->
+  <div class="tools-heading">Tools I Use</div>
   <div class="skills-strip">
     <span>Tableau</span>
     <span>Power BI</span>
@@ -106,14 +132,13 @@
   </div>
 
   <div class="project">
-  <h3>Book Recommender System (BSAN 780)</h3>
-  <p>For our capstone in BSAN 780, my team and I designed a hybrid book recommender system using SQLite and Python. We implemented both content-based and collaborative filtering using cosine similarity, built a user-item ratings matrix, and generated personalized book recommendations. The project involved data preprocessing, cleaning, and recommendation logic development across SQL and Python. Our final system was fully functional, interpretable, and capable of handling cold-start users.</p>
-  <p>
-    <a href="BSAN 780 Final Project Presentation - Team 4.pptx" target="_blank">View Final Presentation (PPTX)</a><br>
-    <a href="Recommender Systems Code.docx" target="_blank">View Full Code and SQL Logic (DOCX)</a>
-  </p>
-</div>
-
+    <h3>Book Recommender System (BSAN 780)</h3>
+    <p>For our capstone in BSAN 780, my team and I designed a hybrid book recommender system using SQLite and Python. We implemented both content-based and collaborative filtering using cosine similarity, built a user-item ratings matrix, and generated personalized book recommendations. The project involved data preprocessing, cleaning, and recommendation logic development across SQL and Python. Our final system was fully functional, interpretable, and capable of handling cold-start users.</p>
+    <p>
+      <a href="BSAN 780 Final Project Presentation - Team 4.pptx" target="_blank">View Final Presentation (PPTX)</a><br>
+      <a href="Recommender Systems Code.docx" target="_blank">View Full Code and SQL Logic (DOCX)</a>
+    </p>
+  </div>
 
   <div class="project">
     <h3>Undergraduate Transcript</h3>
